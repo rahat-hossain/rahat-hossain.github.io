@@ -231,7 +231,7 @@ header{
 .about1 h3{
     font-weight: 600;
     color: #000;
-    margin-top: 10px;
+    margin-top: -3px;
     font-family: 'Montserrat', sans-serif;
 }
 .about1 table i{
@@ -422,6 +422,9 @@ header{
     margin-top: 40px;
     padding-bottom: 40px;
 
+}
+.gallery p{
+    color: #fff;
 }
 .team h1{
     color: #000;
