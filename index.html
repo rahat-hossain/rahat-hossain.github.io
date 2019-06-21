@@ -610,7 +610,7 @@
                         </a>
                     </div>
 
-<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                         <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
                            data-image="assets/img/laravel1.jpg"
                            data-target="#image-gallery">
@@ -861,231 +861,214 @@
         <script src="assets/js/owl.carousel.min.js" type="text/javascript"></script>
         <script src="assets/js/jquery.flexslider.js" type="text/javascript"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script type="text/javascript">var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="https://i1155.photobucket.com/albums/p559/scrolltotop/arrow200.png" />',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();
-            jQuery(document).ready(function($){ 
+        <script type="text/javascript">var scrolltotop = {setting:{startline:100, scrollto:0, scrollduration:1e3, fadeduration:[500, 100]}, controlHTML:'<img src="https://i1155.photobucket.com/albums/p559/scrolltotop/arrow200.png" />', controlattrs:{offsetx:5, offsety:5}, anchorkeyword:"#top", state:{isvisible:!1, shouldvisible:!1}, scrollup:function(){this.cssfixedsupport || this.$control.css({opacity:0}); var t = isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto); t = "string" == typeof t && 1 == jQuery("#" + t).length?jQuery("#" + t).offset().top:0, this.$body.animate({scrollTop:t}, this.setting.scrollduration)}, keepfixed:function(){var t = jQuery(window), o = t.scrollLeft() + t.width() - this.$control.width() - this.controlattrs.offsetx, s = t.scrollTop() + t.height() - this.$control.height() - this.controlattrs.offsety; this.$control.css({left:o + "px", top:s + "px"})}, togglecontrol:function(){var t = jQuery(window).scrollTop(); this.cssfixedsupport || this.keepfixed(), this.state.shouldvisible = t >= this.setting.startline?!0:!1, this.state.shouldvisible && !this.state.isvisible?(this.$control.stop().animate({opacity:1}, this.setting.fadeduration[0]), this.state.isvisible = !0):0 == this.state.shouldvisible && this.state.isvisible && (this.$control.stop().animate({opacity:0}, this.setting.fadeduration[1]), this.state.isvisible = !1)}, init:function(){jQuery(document).ready(function(t){var o = scrolltotop, s = document.all; o.cssfixedsupport = !s || s && "CSS1Compat" == document.compatMode && window.XMLHttpRequest, o.$body = t(window.opera?"CSS1Compat" == document.compatMode?"html":"body":"html,body"), o.$control = t('<div id="topcontrol">' + o.controlHTML + "</div>").css({position:o.cssfixedsupport?"fixed":"absolute", bottom:o.controlattrs.offsety, right:o.controlattrs.offsetx, opacity:0, cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(), !1}).appendTo("body"), document.all && !window.XMLHttpRequest && "" != o.$control.text() && o.$control.css({width:o.$control.width()}), o.togglecontrol(), t('a[href="' + o.anchorkeyword + '"]').click(function(){return o.scrollup(), !1}), t(window).bind("scroll resize", function(t){o.togglecontrol()})})}}; scrolltotop.init();
+                    jQuery(document).ready(function($){
             if (localStorage.getItem('advertOnce') !== 'true') {
             $('body').append('<div id="advert-once" style="position:fixed; bottom: 10px; left: 10px;"><a href="https://www.scrolltotop.com/guide-on-how-to-make-a-website.php" target="_blank" rel="nofollow"><img src="https://i1155.photobucket.com/albums/p559/scrolltotop/makewebsite.png" width="87" height="52" border="0" alt="make a website" /></a><div class="advert-button"></div></div>')
-            localStorage.setItem('advertOnce','true');
-            } 
-            $('#advert-once .advert-button').on('click',function(){
+                    localStorage.setItem('advertOnce', 'true');
+            }
+            $('#advert-once .advert-button').on('click', function(){
             $('#advert-once').hide();
-            }); 
             });
-        </script>
+            });        </script>
         <noscript>Not seeing a <a href="https://www.scrolltotop.com/">Scroll to Top Button</a>? Go to our FAQ page for more info.</noscript>
 
         <script>
-            wow = new WOW(
-            {
-            animateClass: 'animated',
-            offset: 100,
-            callback: function (box) {
-            console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-            }
-            }
-            );
-            wow.init();
-
-        </script>
+                    wow = new WOW(
+                    {
+                    animateClass: 'animated',
+                            offset: 100,
+                            callback: function (box) {
+                            console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                            }
+                    }
+                    );
+                    wow.init();        </script>
 
         <script>
-            $(document).ready(function () {
+                    $(document).ready(function () {
             $('.owl-carousel').owlCarousel({
             loop: true,
-            margin: 10,
-            responsiveClass: true,
-            autoplay: true,
-            autoplayTimeout: 1000,
-            responsive: {
-            0: {
-            items: 1,
-            nav: true
-            },
-            600: {
-            items: 3,
-            nav: false
-            },
-            1000: {
-            items: 4,
-            nav: false,
-            loop: true,
-            margin: 20
-            }
-            }
+                    margin: 10,
+                    responsiveClass: true,
+                    autoplay: true,
+                    autoplayTimeout: 1000,
+                    responsive: {
+                    0: {
+                    items: 1,
+                            nav: true
+                    },
+                            600: {
+                            items: 3,
+                                    nav: false
+                            },
+                            1000: {
+                            items: 4,
+                                    nav: false,
+                                    loop: true,
+                                    margin: 20
+                            }
+                    }
             })
             })
         </script>
 
         <script type="text/javascript">
-            $(function(){
-            SyntaxHighlighter.all();
-            });
-            $(window).load(function(){
+                    $(function(){
+                    SyntaxHighlighter.all();
+                    });
+                    $(window).load(function(){
             $('.flexslider').flexslider({
             animation: "slide",
-            start: function(slider){
-            $('body').removeClass('loading');
-            }
+                    start: function(slider){
+                    $('body').removeClass('loading');
+                    }
             });
-            });
-        </script>
+            });        </script>
 
         <script type="text/javascript">
-            $(document).ready(function() {
+                    $(document).ready(function() {
             $('.Box').mousemove(function(e){
             var window = $(this);
-            var x_axis = e.pageX - window.offset().left;
-            $('.mask').css({
+                    var x_axis = e.pageX - window.offset().left;
+                    $('.mask').css({
             left : x_axis,
-            backgroundPosition : '-' + x_axis + 'px -'
+                    backgroundPosition : '-' + x_axis + 'px -'
             });
             });
-            });
-        </script>
+            });        </script>
         <script type="text/javascript">
-            let modalId = $('#image-gallery');
+                    let modalId = $('#image-gallery');
+                    $(document)
+                    .ready(function () {
 
-            $(document)
-            .ready(function () {
+                    loadGallery(true, 'a.thumbnail');
+                            //This function disables buttons when needed
+                                    function disableButtons(counter_max, counter_current) {
+                                    $('#show-previous-image, #show-next-image')
+                                            .show();
+                                            if (counter_max === counter_current) {
+                                    $('#show-next-image')
+                                            .hide();
+                                    } else if (counter_current === 1) {
+                                    $('#show-previous-image')
+                                            .hide();
+                                    }
+                                    }
 
-            loadGallery(true, 'a.thumbnail');
+                            /**
+                             *
+                             * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
+                             * @param setClickAttr  Sets the attribute for the click handler.
+                             */
 
-            //This function disables buttons when needed
-            function disableButtons(counter_max, counter_current) {
-            $('#show-previous-image, #show-next-image')
-            .show();
-            if (counter_max === counter_current) {
-            $('#show-next-image')
-            .hide();
-            } else if (counter_current === 1) {
-            $('#show-previous-image')
-            .hide();
-            }
-            }
+                            function loadGallery(setIDs, setClickAttr) {
+                            let current_image,
+                                    selector,
+                                    counter = 0;
+                                    $('#show-next-image, #show-previous-image')
+                                    .click(function () {
+                                    if ($(this)
+                                            .attr('id') === 'show-previous-image') {
+                                    current_image--;
+                                    } else {
+                                    current_image++;
+                                    }
 
-            /**
-            *
-            * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
-            * @param setClickAttr  Sets the attribute for the click handler.
-            */
+                                    selector = $('[data-image-id="' + current_image + '"]');
+                                            updateGallery(selector);
+                                    });
+                                    function updateGallery(selector) {
+                                    let $sel = selector;
+                                            current_image = $sel.data('image-id');
+                                            $('#image-gallery-title')
+                                            .text($sel.data('title'));
+                                            $('#image-gallery-image')
+                                            .attr('src', $sel.data('image'));
+                                            disableButtons(counter, $sel.data('image-id'));
+                                    }
 
-            function loadGallery(setIDs, setClickAttr) {
-            let current_image,
-            selector,
-            counter = 0;
-
-            $('#show-next-image, #show-previous-image')
-            .click(function () {
-            if ($(this)
-            .attr('id') === 'show-previous-image') {
-            current_image--;
-            } else {
-            current_image++;
-            }
-
-            selector = $('[data-image-id="' + current_image + '"]');
-            updateGallery(selector);
-            });
-
-            function updateGallery(selector) {
-            let $sel = selector;
-            current_image = $sel.data('image-id');
-            $('#image-gallery-title')
-            .text($sel.data('title'));
-            $('#image-gallery-image')
-            .attr('src', $sel.data('image'));
-            disableButtons(counter, $sel.data('image-id'));
-            }
-
-            if (setIDs == true) {
-            $('[data-image-id]')
-            .each(function () {
-            counter++;
-            $(this)
-            .attr('data-image-id', counter);
-            });
-            }
-            $(setClickAttr)
-            .on('click', function () {
-            updateGallery($(this));
-            });
-            }
-            });
-
-            // build key actions
-            $(document)
-            .keydown(function (e) {
-            switch (e.which) {
-            case 37: // left
-            if ((modalId.data('bs.modal') || {})._isShown && $('#show-previous-image').is(":visible")) {
-            $('#show-previous-image')
-            .click();
-            }
-            break;
-
-            case 39: // right
-            if ((modalId.data('bs.modal') || {})._isShown && $('#show-next-image').is(":visible")) {
-            $('#show-next-image')
-            .click();
-            }
-            break;
-
-            default:
-            return; // exit this handler for other keys
-            }
-            e.preventDefault(); // prevent the default action (scroll / move caret)
-            });
-        </script>
+                            if (setIDs == true) {
+                            $('[data-image-id]')
+                                    .each(function () {
+                                    counter++;
+                                            $(this)
+                                            .attr('data-image-id', counter);
+                                    });
+                            }
+                            $(setClickAttr)
+                                    .on('click', function () {
+                                    updateGallery($(this));
+                                    });
+                            }
+                            });
+                            // build key actions
+                            $(document)
+                            .keydown(function (e) {
+                            switch (e.which) {
+                            case 37: // left
+                                    if ((modalId.data('bs.modal') || {})._isShown && $('#show-previous-image').is(":visible")) {
+                            $('#show-previous-image')
+                                    .click();
+                            }
+                            break;
+                                    case 39: // right
+                                    if ((modalId.data('bs.modal') || {})._isShown && $('#show-next-image').is(":visible")) {
+                            $('#show-next-image')
+                                    .click();
+                            }
+                            break;
+                                    default:
+                                    return; // exit this handler for other keys
+                            }
+                            e.preventDefault(); // prevent the default action (scroll / move caret)
+                            });        </script>
 
         <script>
-            $(window).on("scroll", function() {
-            var bar = $("#skills .progress-bar"),
-            barPos,	
-            windowBtm = $(window).scrollTop() + $(window).height();
-            bar.each(function () {
-            barPos = $(this).offset().top;
-            if(barPos <= windowBtm - 50) {
-            $(this).css("width", function() {
-            return $(this).attr("data-width");
-            });
-            $(this).children(".percent").css({
-            '-webkit-transform': 'scale(1)',
-            '-moz-transform': 'scale(1)',
-            '-ms-transform': 'scale(1)',
-            '-o-transform': 'scale(1)',
-            'transform': 'scale(1)'
-            });
-            }
-            });
-            });
-
-        </script>
+                            $(window).on("scroll", function() {
+                    var bar = $("#skills .progress-bar"),
+                            barPos,
+                            windowBtm = $(window).scrollTop() + $(window).height();
+                            bar.each(function () {
+                            barPos = $(this).offset().top;
+                                    if (barPos <= windowBtm - 50) {
+                            $(this).css("width", function() {
+                            return $(this).attr("data-width");
+                            });
+                                    $(this).children(".percent").css({
+                            '-webkit-transform': 'scale(1)',
+                                    '-moz-transform': 'scale(1)',
+                                    '-ms-transform': 'scale(1)',
+                                    '-o-transform': 'scale(1)',
+                                    'transform': 'scale(1)'
+                            });
+                            }
+                            });
+                    });        </script>
         <!-- smoot scroll script -->
         <script>
-            $(document).ready(function(){
-            // Add smooth scrolling to all links
-            $("a").on('click', function(event) {
+                            $(document).ready(function(){
+                    // Add smooth scrolling to all links
+                    $("a").on('click', function(event) {
 
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+                            // Store hash
+                            var hash = this.hash;
+                            // Using jQuery's animate() method to add smooth page scroll
+                            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                            $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                    }, 800, function(){
 
-            // Store hash
-            var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-            scrollTop: $(hash).offset().top
-            }, 800, function(){
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-            });
-            } // End if
-            });
-            });
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                    });
+                    } // End if
+                    });
+                    });
         </script>
     </body>
 </html>
